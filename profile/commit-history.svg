@@ -1,6 +1,6 @@
-<svg width="760" height="353" viewBox="0 0 760 353" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="760" height="260" viewBox="0 0 760 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
 <title id="title">Commit History</title>
-<desc id="desc">Unique authored commits grouped by year; branch-aware when SCAN_ALL_BRANCHES is enabled.</desc>
+<desc id="desc">Unique profile repository commits grouped by year; branch-aware when SCAN_ALL_BRANCHES is enabled.</desc>
 
 <defs>
   <linearGradient id="accent" x1="0" x2="760" y1="0" y2="0" gradientUnits="userSpaceOnUse">
@@ -25,11 +25,11 @@
   .value { fill: #f5f7fb; font: 800 27px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
   .axis { fill: #cbd5e1; font: 700 13px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
 </style>
-<rect class="bg" width="760" height="353" rx="16" />
-<rect width="760" height="353" fill="url(#grid)" rx="16" />
-<rect class="card" x="0.5" y="0.5" width="759" height="352" rx="16" />
+<rect class="bg" width="760" height="260" rx="16" />
+<rect width="760" height="260" fill="url(#grid)" rx="16" />
+<rect class="card" x="0.5" y="0.5" width="759" height="259" rx="16" />
 <rect x="0" y="0" width="760" height="5" fill="url(#accent)" />
 <text x="28" y="42" class="title">Commit History</text>
-<text x="28" y="64" class="subtitle">Unique authored commits grouped by year; branch-aware when SCAN_ALL_BRANCHES is enabled.</text>
-<text x="34" y="104" class="axis">2025</text><rect x="126" y="94" width="500" height="12" fill="#1f2937" rx="6" /><rect x="126" y="94" width="500" height="12" fill="#ff5a5f" rx="6" /><text x="710" y="104" class="axis" text-anchor="end">34</text><text x="34" y="135" class="axis">2024</text><rect x="126" y="125" width="500" height="12" fill="#1f2937" rx="6" /><rect x="126" y="125" width="176" height="12" fill="#f59e0b" rx="6" /><text x="710" y="135" class="axis" text-anchor="end">12</text><text x="34" y="166" class="axis">2023</text><rect x="126" y="156" width="500" height="12" fill="#1f2937" rx="6" /><rect x="126" y="156" width="265" height="12" fill="#34d399" rx="6" /><text x="710" y="166" class="axis" text-anchor="end">18</text><text x="34" y="197" class="axis">2022</text><rect x="126" y="187" width="500" height="12" fill="#1f2937" rx="6" /><rect x="126" y="187" width="44" height="12" fill="#38bdf8" rx="6" /><text x="710" y="197" class="axis" text-anchor="end">3</text><text x="34" y="228" class="axis">2021</text><rect x="126" y="218" width="500" height="12" fill="#1f2937" rx="6" /><rect x="126" y="218" width="44" height="12" fill="#a78bfa" rx="6" /><text x="710" y="228" class="axis" text-anchor="end">3</text><text x="34" y="259" class="axis">2020</text><rect x="126" y="249" width="500" height="12" fill="#1f2937" rx="6" /><rect x="126" y="249" width="250" height="12" fill="#ff5a5f" rx="6" /><text x="710" y="259" class="axis" text-anchor="end">17</text><text x="34" y="290" class="axis">2019</text><rect x="126" y="280" width="500" height="12" fill="#1f2937" rx="6" /><rect x="126" y="280" width="279" height="12" fill="#f59e0b" rx="6" /><text x="710" y="290" class="axis" text-anchor="end">19</text>
+<text x="28" y="64" class="subtitle">Unique profile repository commits grouped by year; branch-aware when SCAN_ALL_BRANCHES is enabled.</text>
+<text x="34" y="104" class="axis">2025</text><rect x="126" y="94" width="500" height="12" fill="#1f2937" rx="6" /><rect x="126" y="94" width="500" height="12" fill="#ff5a5f" rx="6" /><text x="710" y="104" class="axis" text-anchor="end">29</text><text x="34" y="135" class="axis">2024</text><rect x="126" y="125" width="500" height="12" fill="#1f2937" rx="6" /><rect x="126" y="125" width="69" height="12" fill="#f59e0b" rx="6" /><text x="710" y="135" class="axis" text-anchor="end">4</text><text x="34" y="166" class="axis">2020</text><rect x="126" y="156" width="500" height="12" fill="#1f2937" rx="6" /><rect x="126" y="156" width="103" height="12" fill="#34d399" rx="6" /><text x="710" y="166" class="axis" text-anchor="end">6</text><text x="34" y="197" class="axis">2019</text><rect x="126" y="187" width="500" height="12" fill="#1f2937" rx="6" /><rect x="126" y="187" width="17" height="12" fill="#38bdf8" rx="6" /><text x="710" y="197" class="axis" text-anchor="end">1</text>
 </svg>

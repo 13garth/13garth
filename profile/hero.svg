@@ -27,19 +27,19 @@
 <rect class="grid" width="760" height="280" rx="24" />
 <rect x="0" y="0" width="760" height="8" fill="url(#heroAccent)" />
 <rect x="28" y="34" width="70" height="70" rx="20" fill="#111827" stroke="#2b3952" />
-<text x="47" y="80" fill="#ff5a5f" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="34" font-weight="900">GB</text>
+<text x="63" y="70" fill="#ff5a5f" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="34" font-weight="900" text-anchor="middle" dominant-baseline="middle">GB</text>
 <text x="116" y="60" class="title">Garth Baker</text>
 <text x="118" y="92" class="role">Senior Laravel Full-Stack Engineer</text>
 <text x="118" y="121" class="copy">Senior WordPress developer, product builder, and practical business software engineer.</text>
 <text x="118" y="142" class="copy">Based in the Netherlands. Strongest lane: Laravel, PHP, MySQL, JavaScript.</text>
 <rect x="28" y="166" width="157" height="35" rx="17.5" class="pill" />
-<text x="51" y="188" class="pillText">Laravel full stack</text>
+<text x="106.5" y="188" class="pillText" text-anchor="middle">Laravel full stack</text>
 <rect x="197" y="166" width="165" height="35" rx="17.5" class="pill" />
-<text x="220" y="188" class="pillText">Senior WordPress</text>
+<text x="279.5" y="188" class="pillText" text-anchor="middle">Senior WordPress</text>
 <rect x="374" y="166" width="157" height="35" rx="17.5" class="pill" />
-<text x="397" y="188" class="pillText">PHP / MySQL / JS</text>
+<text x="452.5" y="188" class="pillText" text-anchor="middle">PHP / MySQL / JS</text>
 <rect x="543" y="166" width="189" height="35" rx="17.5" class="pill" />
-<text x="566" y="188" class="pillText">Products and business tools</text>
+<text x="637.5" y="188" class="pillText" text-anchor="middle">Product &amp; business tools</text>
 <rect x="28" y="226" width="194" height="1" fill="#334155" />
 <text x="28" y="258" class="metric">SaaS</text>
 <text x="94" y="258" class="metricLabel">billing, dashboards, APIs</text>
