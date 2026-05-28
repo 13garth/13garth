@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Garth Baker - Senior Laravel full-stack engineer and senior WordPress developer based in the Netherlands." />
+  <title>Garth Baker - Senior Laravel Full-Stack Engineer</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080d16;
+      --panel: #0f172a;
+      --panel-2: #111827;
+      --line: #273244;
+      --text: #f8fafc;
+      --muted: #a8b4c7;
+      --blue: #58a6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #111827 0, var(--bg) 42rem);
+      color: var(--text);
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    a {
+      color: var(--blue);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      width: min(100% - 32px, 760px);
+      margin: 0 auto;
+      padding: 24px 0 56px;
+    }
+
+    .hero,
+    .stats img {
+      display: block;
+      width: 100%;
+      border-radius: 16px;
+      background: var(--panel);
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px 16px;
+      margin: 20px 0 28px;
+    }
+
+    .section {
+      border-top: 1px solid var(--line);
+      padding: 24px 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      font-size: 1.45rem;
+      line-height: 1.2;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: var(--muted);
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .card {
+      min-height: 100%;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: color-mix(in srgb, var(--panel-2) 92%, transparent);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 4px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--panel-2);
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .rows {
+      display: grid;
+      gap: 0;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: 14px;
+      padding: 13px 0;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+    }
+
+    .row:last-child {
+      border-bottom: 0;
+    }
+
+    .stats {
+      display: grid;
+      gap: 18px;
+    }
+
+    .note,
+    .footer {
+      color: var(--muted);
+    }
+
+    .footer {
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        width: min(100% - 20px, 760px);
+        padding-top: 10px;
+      }
+
+      .grid,
+      .row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <img class="hero" src="./profile/hero.svg" alt="Garth Baker - Senior Laravel Full-Stack Engineer and Senior WordPress Developer" />
+
+    <nav class="links" aria-label="Primary links">
+      <a href="https://13garth.github.io">Portfolio</a>
+      <a href="https://www.linkedin.com/in/13garth">LinkedIn</a>
+      <a href="https://BudgetKicker.com">Budget Kicker</a>
+      <a href="https://coverweb.online">CoverWeb</a>
+      <a href="https://stackoverflow.com/users/8125278/13garth">Stack Overflow</a>
+    </nav>
+
+    <section class="section">
+      <h2>About</h2>
+      <p>I am <strong>Garth Baker</strong>, a South African-born full stack software engineer based in the Netherlands.</p>
+      <p>My strongest lane is <strong>Laravel full-stack engineering</strong>: business systems, APIs, admin panels, reporting workflows, billing tools, deployments, and maintainable PHP/MySQL applications.</p>
+      <p>I am also a <strong>senior WordPress developer</strong>. WordPress is not my main product focus, but I can use it deeply when it is the right tool: custom builds, theme and plugin work, migrations, troubleshooting, performance fixes, hosting handovers, and client-ready delivery.</p>
+      <p>I have been building professionally since <strong>2016</strong>, with a practical range that covers discovery, wireframes, responsive UI, backend integration, deployment, documentation, and handover.</p>
+      <p>I like building practical software that earns trust because it solves real operational problems.</p>
+    </section>
+
+    <section class="section">
+      <h2>Engineering Focus</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Laravel Full Stack</h3>
+          <ul>
+            <li>Laravel apps, APIs, queues, jobs, auth, billing, reports</li>
+            <li>MySQL/MariaDB data modeling and query work</li>
+            <li>Admin dashboards and internal operations tools</li>
+            <li>Deployment workflows, GitHub Actions, VPS/shared hosting</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Senior WordPress</h3>
+          <ul>
+            <li>Custom themes, plugins, templates, and admin workflows</li>
+            <li>WooCommerce and content-heavy business websites</li>
+            <li>Migration, recovery, hosting, speed, and maintenance work</li>
+            <li>Practical client delivery without overengineering</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Product Builder</h3>
+          <ul>
+            <li>SaaS-style tools and paid product ideas</li>
+            <li>Billing, invoicing, budgeting, and customer workflows</li>
+            <li>Reusable utilities that reduce repeated development work</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Learning Edge</h3>
+          <ul>
+            <li>C#, ASP.NET, and Blazor</li>
+            <li>Flutter and Dart when mobile makes sense</li>
+            <li>Careful AI-assisted development with real understanding</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Stack</h2>
+      <h3>Core</h3>
+      <div class="chips">
+        <span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">MySQL</span><span class="chip">MariaDB</span><span class="chip">JavaScript</span><span class="chip">jQuery</span><span class="chip">Vue.js</span><span class="chip">HTML5</span><span class="chip">CSS</span><span class="chip">Bootstrap</span>
+      </div>
+      <h3 style="margin-top: 20px;">WordPress</h3>
+      <div class="chips">
+        <span class="chip">Senior WordPress</span><span class="chip">WooCommerce</span><span class="chip">Custom plugins</span><span class="chip">Custom themes</span><span class="chip">Migrations</span>
+      </div>
+      <h3 style="margin-top: 20px;">Platforms, Tools & Expanding Range</h3>
+      <div class="chips">
+        <span class="chip">REST APIs</span><span class="chip">Postman</span><span class="chip">GitHub Actions</span><span class="chip">Docker</span><span class="chip">AWS</span><span class="chip">Linux</span><span class="chip">Apache</span><span class="chip">IIS</span><span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">C#</span><span class="chip">ASP.NET</span><span class="chip">Blazor</span><span class="chip">Figma</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Featured Work</h2>
+      <div class="rows">
+        <div class="row"><a href="https://BudgetKicker.com">Budget Kicker</a><span>Personal finance and business billing product thinking: recurring costs, shared expenses, customer invoices, templates, and reporting.</span></div>
+        <div class="row"><a href="https://coverweb.online">CoverWeb</a><span>Hosting, domains, customer workflow, and business operations brought together under a practical software/hosting brand.</span></div>
+        <div class="row"><a href="https://13garth.github.io">Portfolio / CV</a><span>Public professional profile showing experience, technical range, and project direction.</span></div>
+        <div class="row"><a href="https://g-portfolio.garthbaker.co.za/">Detailed CV</a><span>Longer-form public CV with work history, project examples, skill breakdowns, and problem-solving notes.</span></div>
+        <div class="row"><a href="https://github.com/13garth/api-status-checker-basic-local">API Status Checker</a><span>Local URL/API/domain health checking utility for fast operational checks.</span></div>
+        <div class="row"><a href="https://github.com/13garth/bootstrap-re-usable-confirm-modal">Bootstrap Reusable Confirm Modal</a><span>Small reusable UI utility that removes repeated modal code.</span></div>
+        <div class="row"><a href="https://github.com/13garth/php-mysql-connector">PHP MySQL Connector</a><span>Lightweight PHP/MySQL utility work and older LAMP-stack foundations.</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Public CV Signals</h2>
+      <div class="rows">
+        <div class="row"><strong>Professional experience</strong><span>Full stack development from 2016 onward across Laravel, PHP, WordPress, responsive UI, Flutter, AWS, and client delivery.</span></div>
+        <div class="row"><strong>End-to-end delivery</strong><span>Comfortable moving from requirements and wireframes through frontend, backend, deployment, documentation, support, and handover.</span></div>
+        <div class="row"><strong>Community footprint</strong><span>Public Stack Overflow history across PHP, CSS, JavaScript, HTML, WordPress, and Laravel topics.</span></div>
+        <div class="row"><strong>Builder mindset</strong><span>Product ideas, reusable developer utilities, business workflow tools, and practical automation.</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Current Direction</h2>
+      <ul>
+        <li>Build strong Laravel products with practical business value.</li>
+        <li>Keep WordPress as a senior delivery skill for the projects where it wins.</li>
+        <li>Turn repeated client/business workflows into reusable systems.</li>
+        <li>Improve deployment, automation, billing, reporting, and API integration patterns.</li>
+        <li>Grow C#, ASP.NET, and Blazor skill while keeping Laravel as the main strength.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>How I Work</h2>
+      <div class="rows">
+        <div class="row"><strong>Business value</strong><span>Start with the operational problem and the user workflow.</span></div>
+        <div class="row"><strong>Architecture</strong><span>Keep the first version understandable, then refactor toward clearer boundaries.</span></div>
+        <div class="row"><strong>UI</strong><span>Build interfaces that make decisions and next actions obvious.</span></div>
+        <div class="row"><strong>APIs</strong><span>Keep integrations predictable, testable, and documented enough to hand over.</span></div>
+        <div class="row"><strong>WordPress</strong><span>Use it pragmatically: fast delivery, clean customization, stable ownership.</span></div>
+        <div class="row"><strong>Maintenance</strong><span>Prefer code that future me, teammates, or clients can understand.</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>GitHub Stats</h2>
+      <div class="stats">
+        <img src="./profile/stats.svg" alt="GitHub activity stats" />
+        <img src="./profile/commit-history.svg" alt="Commit history by year" />
+        <img src="./profile/top-langs.svg" alt="Languages across scanned repositories" />
+      </div>
+      <p class="note">The cards scan repositories under my GitHub profile. Organizations are not scanned, and repository source code is never written into the page.</p>
+    </section>
+
+    <section class="section">
+      <h2>Links</h2>
+      <div class="rows">
+        <div class="row"><strong>GitHub</strong><a href="https://github.com/13garth">github.com/13garth</a></div>
+        <div class="row"><strong>Portfolio / CV</strong><a href="https://13garth.github.io">13garth.github.io</a></div>
+        <div class="row"><strong>Detailed CV</strong><a href="https://g-portfolio.garthbaker.co.za/">g-portfolio.garthbaker.co.za</a></div>
+        <div class="row"><strong>Blog</strong><a href="https://GarthBaker.co.za">GarthBaker.co.za</a></div>
+        <div class="row"><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/13garth">linkedin.com/in/13garth</a></div>
+        <div class="row"><strong>Stack Overflow</strong><a href="https://stackoverflow.com/users/8125278/13garth">stackoverflow.com/users/8125278/13garth</a></div>
+        <div class="row"><strong>Budget Kicker</strong><a href="https://BudgetKicker.com">BudgetKicker.com</a></div>
+        <div class="row"><strong>CoverWeb</strong><a href="https://coverweb.online">coverweb.online</a></div>
+      </div>
+    </section>
+
+    <footer class="section footer">
+      Build useful software. Keep improving it.
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<svg width="760" height="280" viewBox="0 0 760 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">Garth Baker - Senior Laravel Full-Stack Engineer</title>
+<desc id="desc">Profile banner for Garth Baker, a senior Laravel full-stack engineer and senior WordPress developer based in the Netherlands.</desc>
+<defs>
+  <linearGradient id="heroAccent" x1="0" x2="760" y1="0" y2="280" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#ff5a5f" />
+    <stop offset="0.32" stop-color="#f59e0b" />
+    <stop offset="0.66" stop-color="#34d399" />
+    <stop offset="1" stop-color="#38bdf8" />
+  </linearGradient>
+  <pattern id="heroGrid" width="34" height="34" patternUnits="userSpaceOnUse">
+    <path d="M 34 0 L 0 0 0 34" fill="none" stroke="#263244" stroke-width="0.8" opacity="0.55" />
+  </pattern>
+</defs>
+<style>
+  .bg { fill: #08111f; }
+  .grid { fill: url(#heroGrid); }
+  .title { fill: #f8fafc; font: 900 46px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; letter-spacing: 0; }
+  .role { fill: #dbeafe; font: 800 20px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
+  .copy { fill: #aebbd0; font: 600 13px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
+  .pillText { fill: #f8fafc; font: 800 12px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
+  .pill { fill: #111827; stroke: #2b3952; stroke-width: 1; }
+  .metric { fill: #f8fafc; font: 900 25px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
+  .metricLabel { fill: #aebbd0; font: 700 12px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
+</style>
+<rect class="bg" width="760" height="280" rx="24" />
+<rect class="grid" width="760" height="280" rx="24" />
+<rect x="0" y="0" width="760" height="8" fill="url(#heroAccent)" />
+<rect x="28" y="34" width="70" height="70" rx="20" fill="#111827" stroke="#2b3952" />
+<text x="47" y="80" fill="#ff5a5f" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="34" font-weight="900">GB</text>
+<text x="116" y="60" class="title">Garth Baker</text>
+<text x="118" y="92" class="role">Senior Laravel Full-Stack Engineer</text>
+<text x="118" y="121" class="copy">Senior WordPress developer, product builder, and practical business software engineer.</text>
+<text x="118" y="142" class="copy">Based in the Netherlands. Strongest lane: Laravel, PHP, MySQL, JavaScript.</text>
+<rect x="28" y="166" width="157" height="35" rx="17.5" class="pill" />
+<text x="51" y="188" class="pillText">Laravel full stack</text>
+<rect x="197" y="166" width="165" height="35" rx="17.5" class="pill" />
+<text x="220" y="188" class="pillText">Senior WordPress</text>
+<rect x="374" y="166" width="157" height="35" rx="17.5" class="pill" />
+<text x="397" y="188" class="pillText">PHP / MySQL / JS</text>
+<rect x="543" y="166" width="189" height="35" rx="17.5" class="pill" />
+<text x="566" y="188" class="pillText">Products and business tools</text>
+<rect x="28" y="226" width="194" height="1" fill="#334155" />
+<text x="28" y="258" class="metric">SaaS</text>
+<text x="94" y="258" class="metricLabel">billing, dashboards, APIs</text>
+<rect x="283" y="226" width="194" height="1" fill="#334155" />
+<text x="283" y="258" class="metric">CMS</text>
+<text x="350" y="258" class="metricLabel">WordPress builds and recovery</text>
+<rect x="538" y="226" width="194" height="1" fill="#334155" />
+<text x="538" y="258" class="metric">Ops</text>
+<text x="594" y="258" class="metricLabel">deployments and CI</text>
+</svg>
