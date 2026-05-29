@@ -4,7 +4,7 @@
 
 <br />
 
-<a href="https://13garth.github.io"><strong>Portfolio</strong></a>
+<a href="https://13garth.github.io"><strong>Full CV</strong></a>
 &nbsp;&middot;&nbsp;
 <a href="https://www.linkedin.com/in/13garth"><strong>LinkedIn</strong></a>
 &nbsp;&middot;&nbsp;
@@ -99,8 +99,8 @@ I like building practical software that earns trust because it solves real opera
 |---|---|
 | [Budget Kicker](https://BudgetKicker.com) | Personal finance and business billing product thinking: recurring costs, shared expenses, customer invoices, templates, and reporting. |
 | [CoverWeb](https://coverweb.online) | Hosting, domains, customer workflow, and business operations brought together under a practical software/hosting brand. |
-| [Portfolio / CV](https://13garth.github.io) | Public professional profile showing experience, technical range, and project direction. |
-| [Detailed CV](https://g-portfolio.garthbaker.co.za/) | Longer-form public CV with work history, project examples, skill breakdowns, and problem-solving notes. |
+| [Full CV](https://13garth.github.io) | Public CV with work history, engineering focus, selected work, education, and contact links. |
+| [Detailed CV Archive](https://g-portfolio.garthbaker.co.za/) | Longer-form CV archive with additional project examples and problem-solving notes. |
 | [API Status Checker](https://github.com/13garth/api-status-checker-basic-local) | Local URL/API/domain health checking utility for fast operational checks. |
 | [Bootstrap Reusable Confirm Modal](https://github.com/13garth/bootstrap-re-usable-confirm-modal) | Small reusable UI utility that removes repeated modal code. |
 | [PHP MySQL Connector](https://github.com/13garth/php-mysql-connector) | Lightweight PHP/MySQL utility work and older LAMP-stack foundations. |
@@ -168,8 +168,8 @@ I like building practical software that earns trust because it solves real opera
 | Platform | Link |
 |---|---|
 | GitHub | [github.com/13garth](https://github.com/13garth) |
-| Portfolio / CV | [13garth.github.io](https://13garth.github.io) |
-| Detailed CV | [g-portfolio.garthbaker.co.za](https://g-portfolio.garthbaker.co.za/) |
+| Full CV | [13garth.github.io](https://13garth.github.io) |
+| Detailed CV archive | [g-portfolio.garthbaker.co.za](https://g-portfolio.garthbaker.co.za/) |
 | Blog | [GarthBaker.co.za](https://GarthBaker.co.za) |
 | LinkedIn | [linkedin.com/in/13garth](https://www.linkedin.com/in/13garth) |
 | Stack Overflow | [stackoverflow.com/users/8125278/13garth](https://stackoverflow.com/users/8125278/13garth) |
