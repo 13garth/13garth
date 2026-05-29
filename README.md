@@ -103,7 +103,6 @@ I like building practical software that earns trust because it solves real opera
 | [Detailed CV Archive](https://g-portfolio.garthbaker.co.za/) | Longer-form CV archive with additional project examples and problem-solving notes. |
 | [API Status Checker](https://github.com/13garth/api-status-checker-basic-local) | Local URL/API/domain health checking utility for fast operational checks. |
 | [Bootstrap Reusable Confirm Modal](https://github.com/13garth/bootstrap-re-usable-confirm-modal) | Small reusable UI utility that removes repeated modal code. |
-| [PHP MySQL Connector](https://github.com/13garth/php-mysql-connector) | Lightweight PHP/MySQL utility work and older LAMP-stack foundations. |
 
 ---
 

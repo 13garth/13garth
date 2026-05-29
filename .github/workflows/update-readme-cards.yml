@@ -42,7 +42,8 @@ jobs:
           LANGUAGE_ALIASES: "Blade:PHP,Twig:PHP"
 
           # Hide generated, vendored, markup, styling, docs, and incidental languages.
-          HIDE_LANGUAGES: "HTML,CSS,SCSS,Hack,MDX,C,C++,Astro,Makefile,Shell,Dockerfile"
+          HIDE_LANGUAGES: "HTML,CSS,SCSS,Hack,MDX,C,C++,Astro,CMake,TSQL,Makefile,Shell,Dockerfile"
+          LANGUAGE_MIN_PERCENT: "0.5"
 
           # Keep forks out unless you want forked repos counted too.
           INCLUDE_FORKS: "false"

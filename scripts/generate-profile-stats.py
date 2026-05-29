@@ -41,8 +41,9 @@ def csv_values(name: str, default: str = "") -> list[str]:
 
 
 EXCLUDE_REPOS = {repo.lower() for repo in csv_values("EXCLUDE_REPOS", "13garth/13garth,13garth/13garth.github.io")}
-DEFAULT_HIDE_LANGUAGES = "HTML,CSS,SCSS,Hack,MDX,C,C++,Astro,Makefile,Shell,Dockerfile"
+DEFAULT_HIDE_LANGUAGES = "HTML,CSS,SCSS,Hack,MDX,C,C++,Astro,CMake,TSQL,Makefile,Shell,Dockerfile"
 HIDE_LANGUAGES = set(csv_values("HIDE_LANGUAGES", DEFAULT_HIDE_LANGUAGES))
+LANGUAGE_MIN_PERCENT = float(os.environ.get("LANGUAGE_MIN_PERCENT", "0.5"))
 COMMIT_AUTHOR_LOGINS = {value.lower() for value in csv_values("COMMIT_AUTHOR_LOGINS", USERNAME)}
 COMMIT_AUTHOR_NAMES = {value.lower() for value in csv_values("COMMIT_AUTHOR_NAMES", f"{USERNAME},Garth Baker")}
 COMMIT_AUTHOR_EMAILS = {value.lower() for value in csv_values("COMMIT_AUTHOR_EMAILS")}
@@ -479,10 +480,9 @@ def write_stats_svg(stats: dict[str, int | str], output_file: Path) -> None:
 
 def write_languages_svg(languages: Counter[str], output_file: Path) -> None:
     width = CARD_WIDTH
-    top_languages = languages.most_common(8)
     total_bytes = sum(languages.values())
 
-    if total_bytes <= 0 or not top_languages:
+    if total_bytes <= 0:
         body = '<text x="28" y="112" class="label">No language data found.</text>'
         output_file.write_text(
             card_shell("Language Mix", "Aggregate language usage across scanned repositories.", 150, body),
@@ -490,7 +490,17 @@ def write_languages_svg(languages: Counter[str], output_file: Path) -> None:
         )
         return
 
+    top_languages = [
+        (language, byte_count)
+        for language, byte_count in languages.most_common()
+        if (byte_count / total_bytes) * 100 >= LANGUAGE_MIN_PERCENT
+    ][:8]
+
+    if not top_languages:
+        top_languages = languages.most_common(1)
+
     height = 150 + len(top_languages) * 28
+    visible_total_bytes = sum(byte_count for _language, byte_count in top_languages)
     bar_x = 28
     bar_y = 92
     bar_width = width - 56
@@ -500,7 +510,7 @@ def write_languages_svg(languages: Counter[str], output_file: Path) -> None:
     legend_rows = []
 
     for index, (language, byte_count) in enumerate(top_languages):
-        percentage = byte_count / total_bytes
+        percentage = byte_count / visible_total_bytes
         remaining_width = bar_x + bar_width - current_x
         segment_width = round(bar_width * percentage)
 
@@ -525,7 +535,10 @@ def write_languages_svg(languages: Counter[str], output_file: Path) -> None:
         )
 
     alias_note = ", ".join(f"{source}->{target}" for source, target in LANGUAGE_ALIASES.items()) or "none"
-    subtitle = f"Aggregate repository language usage. Aliases: {alias_note}. Incidental languages hidden."
+    subtitle = (
+        f"Aggregate repository language usage. Aliases: {alias_note}. "
+        f"Languages below {LANGUAGE_MIN_PERCENT:g}% hidden."
+    )
 
     body = f'''
 <clipPath id="barClip"><rect x="{bar_x}" y="{bar_y}" width="{bar_width}" height="{bar_height}" rx="8" /></clipPath>
