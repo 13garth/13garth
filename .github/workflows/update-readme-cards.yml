@@ -1,0 +1,91 @@
+name: Update README Cards
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: readme-cards
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate local GitHub profile cards
+        env:
+          # Public repository data only; no personal token is required.
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_USERNAME: "13garth"
+          COMMIT_AUTHOR_LOGINS: "13garth"
+          COMMIT_AUTHOR_NAMES: "Garth Baker,13garth"
+          COMMIT_AUTHOR_EMAILS: "42392216+13garth@users.noreply.github.com"
+
+          # Exclude profile/portfolio repos so they do not skew language stats.
+          EXCLUDE_REPOS: "13garth/13garth,13garth/13garth.github.io"
+
+          # Main place to refine the public language card.
+          # GitHub returns language bytes from each repository's Languages API.
+          # Aliases fold framework/template languages into the skill they represent.
+          LANGUAGE_ALIASES: "Blade:PHP,Twig:PHP"
+
+          # Hide generated, vendored, markup, styling, docs, and incidental languages.
+          HIDE_LANGUAGES: "HTML,CSS,SCSS,Hack,MDX,C,C++,Astro,CMake,TSQL,Makefile,Shell,Dockerfile"
+          LANGUAGE_MIN_PERCENT: "0.5"
+
+          # Keep forks out unless you want forked repos counted too.
+          INCLUDE_FORKS: "false"
+
+          # Count commits in public profile repositories.
+          COUNT_ALL_COMMITS: "true"
+
+          # Keep archived repos unless you want to exclude old work.
+          EXCLUDE_ARCHIVED: "false"
+
+          # Count authored commits across branches, while keeping API use bounded.
+          SCAN_ALL_BRANCHES: "true"
+          MAX_BRANCHES_PER_REPO: "25"
+          MAX_COMMITS_PER_REPO: "2000"
+
+          OUTPUT_DIR: "profile"
+        run: python scripts/generate-profile-stats.py
+
+      - name: Commit generated cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add profile/*.svg
+
+          if git diff --cached --quiet; then
+            echo "No card changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update README cards"
+
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git pull --rebase origin main
+
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+
+            echo "Push attempt ${attempt} failed because main moved; retrying."
+            sleep 3
+          done
+
+          echo "Unable to push generated cards after rebasing."
+          exit 1
